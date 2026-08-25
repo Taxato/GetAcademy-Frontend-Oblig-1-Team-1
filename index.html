@@ -135,47 +135,77 @@
 					</article>
 				</div>
 			</section>
+
+			<section class="travel-reguest">
+				<form>
+					<h2>Planlegg din reise</h2>
+					<lable for="name">Navn:</lable>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						required />
+
+					<label for="email">E-post:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required />
+
+					<label for="level">Velg nivå:</label>
+					<select
+						id="level"
+						name="level">
+						<option value="lett">Lett</option>
+						<option value="middels">Middels</option>
+						<option value="krevende">Krevende</option>
+					</select>
+
+					<label for="date">Ønsket avreisedato:</label>
+					<input
+						type="date"
+						id="date"
+						name="date" />
+
+					<label for="newsletter">
+						<input
+							type="checkbox"
+							id="newsletter"
+							name="newsletter" />Jeg vil mota nyhetsbrev
+					</label>
+
+					<button type="submit">Send inn</button>
+				</form>
+
+				<svg
+					width="300"
+					height="200"
+					viewBox="0 0 300 200">
+					<polygon
+						points="20,150 100,50 180,150"
+						fill="gray"></polygon>
+
+					<polygon
+						points="120,150 200,70 280,150"
+						fill="darkgray"></polygon>
+
+					<rect
+						x="0"
+						y="140"
+						width="300"
+						height="20"
+						fill="green"></rect>
+
+					<rect
+						x="0"
+						y="160"
+						width="300"
+						height="40"
+						fill="lightblue"></rect>
+				</svg>
+			</section>
 		</main>
-
-		<form>
-			<lable for="name">Navn:</lable>
-			<input
-				type="text"
-				id="name"
-				name="name"
-				required />
-
-			<label for="email">E-post:</label>
-			<input
-				type="email"
-				id="email"
-				name="email"
-				required />
-
-			<label for="level">Velg nivå:</label>
-			<select
-				id="level"
-				name="level">
-				<option value="lett">Lett</option>
-				<option value="middels">Middels</option>
-				<option value="krevende">Krevende</option>
-			</select>
-
-			<label for="date">Ønsket avreisedato:</label>
-			<input
-				type="date"
-				id="date"
-				name="date" />
-
-			<label for="newsletter">
-				<input
-					type="checkbox"
-					id="newsletter"
-					name="newsletter" />Jeg vil mota nyhetsbrev
-			</label>
-
-			<button type="submit">Send inn</button>
-		</form>
 
 		<footer>
 			<a href="mailto:kontakt@gronnreise.no">kontakt@gronnreise.no</a>
