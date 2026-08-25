@@ -11,3 +11,16 @@
   margin: 0;
   padding: 0;
 }
+
+.destination-card {
+    display: flex;          
+    align-items: center;   
+    gap: 1rem;            
+}
+
+.destination-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;               
+}
+
