@@ -19,7 +19,25 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+    margin: 1rem;
 }
+
+.destination-card picture {
+    width: 45%;
+    flex-shrink: 0;
+}
+
+.destination-card img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.destinations h2 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
 .destination-content {
 	display: flex;
 	flex-direction: column;
