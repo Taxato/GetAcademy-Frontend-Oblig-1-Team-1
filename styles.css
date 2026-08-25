@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center; 
     gap: 1rem;           
-
+}
 .destination-content {
     display: flex;
     flex-direction: column; 
@@ -57,6 +57,31 @@ footer a:hover {
     gap: 20px;
     padding: 0;
     margin: 4px 0 0;
+}
+
+@media (min-width: 900px) {
+    .destinations {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .destination-card {
+        display: block;
+    }
+
+    .destination-card picture {
+        display: block;
+        width: 100%;
+    }
+
+    .destination-card img {
+        width: 100%;
+    }
+
+    .destination-content {
+        padding: 1rem;
+    }
 }
 
 @keyframes glow {
