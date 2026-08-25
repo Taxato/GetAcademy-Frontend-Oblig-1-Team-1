@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root {
   --color-primary: #1a472a;
   --color-secondary: #e8f5e9;
@@ -11,3 +12,44 @@
   margin: 0;
   padding: 0;
 }
+=======
+  body {
+    margin: 0;
+  }
+
+  footer {
+    height: 120px;
+    background: linear-gradient(90deg, #ff7a3d, #ff3d6e, #ff7a3d);
+    background-size: 200% 100%;
+    animation: glow 3s linear infinite, pulse 2s ease-in-out infinite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .footer-contact a {
+    margin: 0 10px;
+  }
+
+  .footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 4px 0 0;
+  }
+
+  @keyframes glow {
+    0%   { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 40px 10px rgba(255, 61, 110, 0.5); }
+    50%      { box-shadow: 0 0 80px 20px rgba(255, 122, 61, 0.8); }
+  }
+>>>>>>> Stashed changes
