@@ -24,29 +24,60 @@ a {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
-    margin: 1rem;
+	margin: 1rem;
 }
 
 .destination-card picture {
-    width: 45%;
-    flex-shrink: 0;
+	width: 45%;
+	flex-shrink: 0;
 }
 
 .destination-card img {
-    width: 100%;
-    display: block;
-    height: auto;
+	width: 100%;
+	display: block;
+	height: auto;
 }
 
 .destinations h2 {
-    margin-left: 1rem;
-    margin-top: 1rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
 .destination-content {
 	display: flex;
 	flex-direction: column;
 	gap: 0.3rem;
+}
+
+.travel-request {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 40px;
+	padding: 30px;
+}
+
+.travel-request form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 300px;
+}
+
+.travel-illustration {
+	width: 300px;
+	height: 200px;
+	flex-shrink: 0;
+}
+
+.travel-request input,
+.travel-request select {
+	padding: 8px;
+}
+
+.travel-request button {
+	padding: 10px;
+	cursor: pointer;
 }
 
 footer {
@@ -129,5 +160,15 @@ footer a:hover {
 	}
 	50% {
 		box-shadow: 0 0 80px 20px #1ea20c93;
+	}
+}
+
+@media (max-width: 600px) {
+	.travel-request {
+		display: block;
+	}
+
+	.travel-illustration {
+		display: none;
 	}
 }
