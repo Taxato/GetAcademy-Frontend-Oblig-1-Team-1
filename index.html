@@ -51,60 +51,90 @@
 						fill="white" />
 				</svg>
 			</section>
-			<section class="destinations">
+			<section class="destinations">				
 				<article>
-					<img
-						src="bilder/lofoten-480.webp"
-						srcset="
-							bilder/lofoten-480.webp   480w,
-							bilder/lofoten-768.webp   768w,
-							bilder/lofoten-1200.webp 1200w
-						"
-						sizes="
-								(max-width: 600px) 100vw,
-								(max-width: 900px) 50vw,
-								33vw
+					<picture>						
+						<source
+							type="image/webp"
+							srcset="
+								bilder/lofoten-480.webp   480w,
+								bilder/lofoten-768.webp   768w,
+								bilder/lofoten-1200.webp 1200w
 							"
-						loading="lazy"
-						alt="Bilde av Lofoten" />
+							sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+						
+						<source
+							type="image/png"
+							srcset="
+								bilder/lofoten-480.png   480w,
+								bilder/lofoten-768.png   768w,
+								bilder/lofoten-1200.png 1200w
+							"
+							sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+						
+						<img
+							src="bilder/lofoten-480.png"
+							loading="lazy"
+							alt="Bilde av Lofoten" />
+					</picture>
 
 					<h3>Lofoten - Fra 4 500 kr</h3>
 					<a href="#lofoten">Les mer</a>
-				</article>
+				</article>				
 				<article>
-					<img
-						src="bilder/svalbard-480.webp"
-						srcset="
-							bilder/svalbard-480.webp   480w,
-							bilder/svalbard-768.webp   768w,
-							bilder/svalbard-1200.webp 1200w
-						"
-						sizes="
-								(max-width: 600px) 100vw,
-								(max-width: 900px) 50vw,
-								33vw
+					<picture>
+						<source
+							type="image/webp"
+							srcset="
+                    bilder/svalbard-4		bard-480.webp   480w,
+                    bilder/svalbard-768.webp   768w,
+                    bilder/svalbard-1200.webp 1200w
+                "
+							sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+
+						<source
+							type="image/png"
+							srcset="
+								bilder/svalbard-480.png   480w,
+								bilder/svalbard-768.png   768w,
+								bilder/svalbard-1200.png 1200w
 							"
-						loading="lazy"
-						alt="Bilde av Svalbard" />
+							sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+
+						<img
+							src="bilder/svalbard-480.png"
+							loading="lazy"
+							alt="Bilde av Svalbard" />
+					</picture>
 
 					<h3>Svalbard - Fra 8 900 kr</h3>
 					<a href="#svalbard">Les mer</a>
-				</article>
+				</article>				
 				<article>
-					<img
-						src="bilder/hardanger-480.webp"
-						srcset="
-							bilder/hardanger-480.webp   480w,
-							bilder/hardanger-768.webp   768w,
-							bilder/hardanger-1200.webp 1200w
-						"
-						sizes="
-								(max-width: 600px) 100vw,
-								(max-width: 900px) 50vw,
-								33vw
+					<picture>
+						<source
+							type="image/webp"
+							srcset="
+								bilder/hardanger-480.webp   480w,
+								bilder/hardanger-768.webp   768w,
+								bilder/hardanger-1200.webp 1200w
 							"
-						loading="lazy"
-						alt="Bilde av Hardanger" />
+							sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+
+						<source
+							type="image/png"
+							srcset="
+								bilder/hardanger-480.png   480w,
+								bilder/hardanger-768.png   768w,
+								bilder/hardanger-1200.png 1200w
+							"
+							sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw" />
+
+						<img
+							src="bilder/hardanger-480.png"
+							loading="lazy"
+							alt="Bilde av Hardanger" />
+					</picture>
 
 					<h3>Hardanger - Fra 3 200 kr</h3>
 					<a href="#hardanger">Les mer</a>
