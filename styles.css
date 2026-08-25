@@ -145,7 +145,13 @@ header {
     border: 1px solid var(--color-accent);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: hsl(hue, saturation, lightness);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 .destination-card picture {
