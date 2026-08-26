@@ -167,7 +167,7 @@ header {
 
 .destination-card img {
 	width: 100%;
-	display: block;
+	object-fit: cover;
 	height: auto;
 }
 
