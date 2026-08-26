@@ -208,7 +208,6 @@ header {
 }
 
 footer {
-	height: 8rem;
 	background: linear-gradient(90deg, #17771777, #18888888, #17771777);
 	background-size: 200% 100%;
 	animation:
@@ -230,6 +229,7 @@ footer a:hover {
 	font-weight: bold;
 	font-size: large;
 	text-decoration: none;
+	display:block;
 }
 
 .footer-nav {
@@ -237,10 +237,12 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
 }
 
 @media (min-width: 700px) {
+	.footer-text a {
+		display:inline;
+	}
     .footer-nav {
         flex-direction: row;
         gap: 2rem;
