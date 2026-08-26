@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+	<defs>
+		<linearGradient id="sunset" x1="0.5" x2="0.5" y1="0" y2="1">
+			<stop class="sunset-stop-1" offset="0%" />
+			<stop class="sunset-stop-2" offset="20%" />
+			<stop class="sunset-stop-3" offset="40%" />
+			<stop class="sunset-stop-4" offset="60%" />
+			<stop class="sunset-stop-5" offset="80%" />
+
+		</linearGradient>
+
+		<linearGradient id="mountain-gradient" x1="0.5" x2="0.5" y1="0" y2="1">
+			<stop class="mountain-stop-1" offset="10%" />
+			<stop class="mountain-stop-2" offset="30%" />
+			<stop class="mountain-stop-3" offset="60%" />
+		</linearGradient>
+	</defs>
+
+	<style>
+		#sky-rect {
+			fill: url("#sunset");
+		}
+
+		.sunset-stop-1 {
+			stop-color: #FDE8A9;
+		}
+
+		.sunset-stop-2 {
+			stop-color: #FDE8A9;
+		}
+
+		.sunset-stop-3 {
+			stop-color: #A8D8B9;
+		}
+
+		.sunset-stop-4 {
+			stop-color: #7FBE9A;
+		}
+
+		.sunset-stop-5 {
+			stop-color: #4F8F68;
+		}
+
+		.sunset-stop-6 {
+			stop-color: darkgreen;
+		}
+
+
+
+		#mountain {
+			fill: url("#mountain-gradient");
+		}
+
+		.mountain-stop-1 {
+			stop-color: #ffffff;
+		}
+
+		.mountain-stop-2 {
+			stop-color: #6a6a6a;
+		}
+
+		.mountain-stop-3 {
+			stop-color: #000;
+		}
+	</style>
+
+	<rect id="sky-rect" width="100%" height="100%" fill="lightblue" />
+
+	<circle cx="100" cy="20" r="10" fill="#ffc14f" />
+
+	<polygon id="mountain" points="50,100 100,40 200,150" />
+	<!-- <polygon
+						points="83.33333,60 100,40 118.181818,60"
+						fill="white" /> -->
+</svg>
