@@ -232,11 +232,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	width: 300px;
+	/* width: 300px; */
 }
 
 .travel-illustration {
-	width: 300px;
+	/* width: 300px; */
 	height: 200px;
 	flex-shrink: 0;
 }
