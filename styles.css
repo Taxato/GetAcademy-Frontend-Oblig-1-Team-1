@@ -191,7 +191,7 @@ header {
 		flex-wrap: wrap;
 	}
 
-	.destinations h2 {		
+	.destinations h2 {
 		width: 100%;
 	}
 
@@ -212,8 +212,6 @@ header {
 	.destination-content {
 		padding: 1rem;
 	}
-
-
 }
 
 @media (min-width: 1024px) {
@@ -222,7 +220,7 @@ header {
 		flex-wrap: wrap;
 	}
 
-	.destinations h2 {		
+	.destinations h2 {
 		width: 100%;
 	}
 
@@ -244,8 +242,6 @@ header {
 		padding: 1rem;
 	}
 }
-
-
 
 /* #endregion */
 
