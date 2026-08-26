@@ -58,7 +58,7 @@ header {
 	outline-color: var(--color-primary);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 	header {
 		flex-direction: row;
 		align-items: center;
@@ -111,7 +111,7 @@ header {
 	max-width: 400px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 	.hero {
 		display: grid;
 
