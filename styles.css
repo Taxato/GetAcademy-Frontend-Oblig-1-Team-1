@@ -149,6 +149,8 @@ header {
 	transition:
 		transform 0.2s ease,
 		box-shadow 0.2s ease;
+
+	max-width: 468px;
 }
 
 .destination-card:hover {
@@ -190,11 +192,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	width: 300px;
+	/* width: 300px; */
 }
 
 .travel-illustration {
-	width: 300px;
+	/* width: 300px; */
 	height: 200px;
 	flex-shrink: 0;
 }
@@ -252,17 +254,23 @@ footer a:hover {
 
 @media (min-width: 900px) {
 	.destinations {
-		display: grid;
+		/* display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1rem;
+		gap: 1rem; */
+
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.destinations h2 {
-		grid-column: 1 / -1;
+		/* grid-column: 1 / -1; */
+
+		width: 100%;
 	}
 
 	.destination-card {
 		display: block;
+		flex: 1;
 	}
 
 	.destination-card picture {
