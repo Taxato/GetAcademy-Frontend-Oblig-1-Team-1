@@ -149,8 +149,6 @@ header {
 	transition:
 		transform 0.2s ease,
 		box-shadow 0.2s ease;
-
-	max-width: 468px;
 }
 
 .destination-card:hover {
@@ -192,11 +190,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	/* width: 300px; */
+	width: 300px;
 }
 
 .travel-illustration {
-	/* width: 300px; */
+	width: 300px;
 	height: 200px;
 	flex-shrink: 0;
 }
@@ -217,9 +215,11 @@ footer {
 	animation: glow 3s linear infinite;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	text-align: center;
+	text-align: left;
+	padding: 1rem 1.5rem;
+	gap: 0.5rem;
 }
 
 footer a:hover {
@@ -227,7 +227,7 @@ footer a:hover {
 }
 
 .footer-text a {
-	margin: 0 1rem;
+	margin: 0;
 	color: #fff;
 	font-weight: bold;
 	font-size: large;
@@ -235,49 +235,62 @@ footer a:hover {
 	display: block;
 }
 
-.footer-nav {
-	list-style: none;
+.footer-col {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-<<<<<<< HEAD
+	gap: 0.25rem;
+}
+
+.footer-nav {
+	list-style: none;
+	display: grid;
+	align-items: start;
+	gap: 0.25rem 2rem;
 	padding: 0;
+	margin: 0;
+}
+
+.footer-divider {
+	display: none;
 }
 
 @media (min-width: 700px) {
-=======
-}
+	footer {
+		flex-direction: row;
+		align-items: center;
+		gap: 3rem;
+		height: 8rem;
+	}
 
-@media (min-width: 700px) {
 	.footer-text a {
 		display: inline;
 	}
->>>>>>> e8dd235a7958e74c261a32998aafb702a56a3fee
+
+	.footer-divider {
+		display: block;
+		width: 1px;
+		align-self: stretch;
+		background: #fff;
+	}
+	
 	.footer-nav {
-		flex-direction: row;
-		gap: 2rem;
+		grid-template-columns: repeat(2, auto);
 	}
 }
 
 @media (min-width: 900px) {
 	.destinations {
-		/* display: grid;
+		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1rem; */
-
-		display: flex;
-		flex-wrap: wrap;
+		gap: 1rem;
 	}
 
 	.destinations h2 {
-		/* grid-column: 1 / -1; */
-
-		width: 100%;
+		grid-column: 1 / -1;
 	}
 
 	.destination-card {
 		display: block;
-		flex: 1;
 	}
 
 	.destination-card picture {
