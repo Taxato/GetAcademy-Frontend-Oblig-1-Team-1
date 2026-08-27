@@ -34,8 +34,8 @@ ul {
 }
 
 h2 {
-	margin-left: 1rem;
-	margin-top: 1rem;
+	margin-left: var(--spacing-md);
+	margin-top: var(--spacing-md);
 }
 
 .cta {
