@@ -10,6 +10,9 @@ T: I header har jeg brukt nested flexbox (logo og nav ligger i en <header> flexb
 
 T: Jeg observerte at webp er mye mer kompakt filstørrelse enn png, og såvidt jeg vet mister du ikke noe kvalitet på kompresjonen
 
+Lagde reiseforspørselen med form, og brukte label koblet til feltene med for og id for bedre tilgjengelighet. Brukte text for navn, email for e-post, date for dato, checkbox for nyhetsbrev og select for nivå. Navn og e-post har required, så de må fylles ut før skjemaet kan sendes. Skjemaet kan brukes med tastatur ved å bruke Tab mellom feltene. Synlig fokus gjør det lettere å se hvor man er. Brukte Grid for å plassere feltene og Flexbox for å få skjema og SVG ved siden av hverandre på større skjermer.
+På mobil skjules SVG-en, og fra 768px vises den ved siden av skjemaet.
+
 -----------------------------------------------------------------------------------------------
 
 3 - Skjema og tilgjengelighet: Beskriv hvordan dere har strukturert HTML-skjemaet for reiseforspørsel. Hvilke input-typer og valideringsattributter har dere brukt, og hvordan bidrar de til bedre brukeropplevelse og tilgjengelighet? Forklar også hvordan dere har sørget for at siden kan brukes med bare tastatur, og hvorfor synlig fokus-markering er viktig for tastaturbrukere.
