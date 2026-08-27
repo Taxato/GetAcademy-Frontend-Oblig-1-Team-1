@@ -287,13 +287,15 @@ header {
 /* #endregion */
 
 /* #region ABOUT */
+
 .about {
 	flex-wrap: wrap;
 	border-top: 1px solid #d8d4c8;
 	border-bottom: 1px solid #d8d4c8;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
+
 .about-card {
 	flex: 1 1 220px;
 	display: flex;
@@ -303,9 +305,18 @@ header {
 	padding: 32px 20px;
 	border-right: 1px solid #d8d4c8;
 }
-@media (min-width: 700px) {
+
+.about-card h3 {
+	display: none;
+}
+
+@media (min-width: 768px) {
 	.about {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.about-card h3 {
+		display: block;
 	}
 }
 /* #endregion */
@@ -402,7 +413,7 @@ footer a:hover {
 	display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
 	footer {
 		flex-direction: row;
 		align-items: center;
