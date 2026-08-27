@@ -427,10 +427,18 @@ footer a:hover {
 
 @media (min-width: 768px) {
 	footer {
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 1fr min-content 1fr;
+
 		align-items: center;
 		gap: 3rem;
 		height: 8rem;
+	}
+	footer > div:nth-child(1) {
+		justify-self: end;
+	}
+	footer > div:nth-child(3) {
+		justify-self: start;
 	}
 
 	.footer-text a {
@@ -445,7 +453,8 @@ footer a:hover {
 	}
 
 	.footer-nav {
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(2, 1fr);
+		width: max-content;
 	}
 }
 
