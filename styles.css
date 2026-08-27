@@ -88,6 +88,8 @@ header {
 	text-wrap: balance;
 	gap: 0.5rem;
 	padding: 1rem;
+
+	animation: hero-fadein 500ms ease-out forwards;
 }
 
 .hero .cta {
@@ -132,6 +134,17 @@ header {
 	.hero svg {
 		grid-row: 1 / span 5;
 		grid-column: 2;
+	}
+}
+
+@keyframes hero-fadein {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 
