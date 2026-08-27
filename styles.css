@@ -162,6 +162,7 @@ header {
 .destinations h2 {
 	max-width: 500px;
 	margin-inline: auto;
+	margin-bottom: var(--spacing-md);
 }
 
 .destination-card {
@@ -237,12 +238,14 @@ header {
 	.destinations {
 		display: flex;
 		flex-wrap: wrap;
+		gap: var(--spacing-md);
+	
 	}
 
 	.destinations h2 {
 		flex: 0 0 100%;
 		max-width: none;
-		margin: var(--spacing-md);
+		
 	}
 
 	.destination-card {
@@ -273,6 +276,7 @@ header {
 		justify-content: center;		
 		max-width: 1200px;
 		margin: 0 auto;
+		gap: var(--spacing-md);
 	}
 
 	.destinations h2 {
