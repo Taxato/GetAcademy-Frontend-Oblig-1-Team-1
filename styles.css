@@ -365,8 +365,7 @@ header {
 
 @media (min-width: 768px) {
 	.travel-request {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+		display: flex;
 		gap: var(--spacing-lg);
 		justify-content: center;
 	}
