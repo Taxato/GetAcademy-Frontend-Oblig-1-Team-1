@@ -2,8 +2,22 @@ Spørsmål
 
 1 - Layoutvalg og breakpoints: Hvor brukte dere Grid, og hvor brukte dere Flexbox? Begrunn valgene ut fra layoutproblemene i wireframene. Forklar også hvordan dere valgte breakpoints, og hvorfor layoutendringene (for eksempel de horisontale kortene på mobil) er gode løsninger for små skjermer.
 
+T: I header har jeg brukt nested flexbox (logo og nav ligger i en <header> flexbox, <nav> er i seg selv en egen flexbox). Jeg endrer flex-direction på større skjerm for responsivt layout. I hero gjør jeg noe lignende, separarer bildet og teksten i individuelle deler som jeg kan sette med flexbox. både bildet og teksten holder seg likt i både mobil og desktop layout, det er kun flex-direction på containeren som endrer seg
+
+-----------------------------------------------------------------------------------------------
+
 2 - Responsive bilder i praksis: Beskriv hvordan dere har implementert bildene på destinasjonskortene. Forklar hva srcset, sizes og <picture> gjør, hvordan nettleseren velger hvilken fil den laster, og hvilken rolle object-fit spiller. Sammenlign filstørrelsene på PNG og WebP i bilder/-mappen – hva sier dette om hvorfor moderne bildeformater og responsiv lasting er viktig for ytelse på mobil?
+
+T: Jeg observerte at webp er mye mer kompakt filstørrelse enn png, og såvidt jeg vet mister du ikke noe kvalitet på kompresjonen
+
+-----------------------------------------------------------------------------------------------
 
 3 - Skjema og tilgjengelighet: Beskriv hvordan dere har strukturert HTML-skjemaet for reiseforspørsel. Hvilke input-typer og valideringsattributter har dere brukt, og hvordan bidrar de til bedre brukeropplevelse og tilgjengelighet? Forklar også hvordan dere har sørget for at siden kan brukes med bare tastatur, og hvorfor synlig fokus-markering er viktig for tastaturbrukere.
 
+T: Jeg ser du har brukt required på required felt, du har id og name attributter på alle input felt, og labels med "for" attributt som samsvarer med id-ene. Av input typer ser jeg text (standard input), date, email, checkbox, samt et <select> element.
+
+-----------------------------------------------------------------------------------------------
+
 4 - Animasjon og brukere: Beskriv hvordan dere har brukt @keyframes, transform og transition i løsningen. Hvilke problemer kan animasjoner skape for enkelte brukere, og hvordan har dere håndtert dette med prefers-reduced-motion?
+
+T: For å animere hero seksjon definerte jeg @keyframes hero-fadein som bare går fra en offset posisjon og gjennomsiktig til riktig posisjon og ugjennomsiktighet. Animasjonen spilles av kun når siden lastes inn, med ease-out for at den skal "hoppe" i gang.
