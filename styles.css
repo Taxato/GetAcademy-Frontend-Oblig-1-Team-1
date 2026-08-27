@@ -140,6 +140,7 @@ header {
 /* #region DESTINATIONS */
 
 .destination-card {
+	position: relative;
 	display: flex;
 	align-items: stretch;
 	gap: 1rem;
@@ -153,11 +154,40 @@ header {
 		box-shadow 0.2s ease;
 
 	max-width: 500px;
+	cursor: pointer;
+}
+
+.destination-content a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+}
+
+.destination-content a {
+	color: var(--color-accent);
+	text-decoration: none;
+	font-weight: 600;
+	width: fit-content;
+
+	background-image: linear-gradient(
+		currentColor,
+		currentColor
+	);
+
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: 0 2px;
+
+	transition: background-size 0.3s ease-in-out;
 }
 
 .destination-card:hover {
 	transform: translateY(-3px);
 	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.destination-card:hover .destination-content a {
+	background-size: 100% 2px;
 }
 
 .destination-card picture {
