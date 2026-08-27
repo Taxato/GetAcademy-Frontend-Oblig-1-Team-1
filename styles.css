@@ -187,6 +187,7 @@ header {
 }
 
 .destination-card:hover .destination-content a {
+	color: var(--color-primary);
 	background-size: 100% 2px;
 }
 
