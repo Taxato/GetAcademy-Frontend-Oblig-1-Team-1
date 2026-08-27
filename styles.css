@@ -328,12 +328,12 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 30px 10%;
+	padding: 2rem 10%;
 }
 
 .travel-request form {
 	display: grid;
-	grid-template-columns: 150px 200px;
+	grid-template-columns: 3fr 4fr;
 	justify-content: space-evenly;
 	align-items: center;
 }
@@ -344,7 +344,7 @@ header {
 
 .travel-illustration {
 	display: none;
-	height: 200px;
+	/* height: 200px; */
 	flex-shrink: 0;
 }
 
@@ -363,9 +363,12 @@ header {
 	cursor: pointer;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 768px) {
 	.travel-request {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		justify-content: center;
 	}
 
 	.travel-illustration {
