@@ -239,64 +239,35 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--spacing-md);
-	
 	}
 
 	.destinations h2 {
 		flex: 0 0 100%;
 		max-width: none;
-		
+		margin: 0;
 	}
 
 	.destination-card {
+		display: block;
 		flex: 0 0 calc(50% - (var(--spacing-md) / 2));
 		max-width: none;
 		margin: 0;
-		display: block;
 	}
 
 	.destination-card picture {
 		display: block;
 		width: 100%;
 	}
-
-	.destination-card img {
-		width: 100%;
-	}	
 }
 
 @media (min-width: 1024px) {
 	.destinations {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;		
 		max-width: 1200px;
-		margin: 0 auto;
-		gap: var(--spacing-md);
-	}
-
-	.destinations h2 {
-		max-width: none;
-		width: 100%;
-		margin-inline: 0;
+		justify-content: center;
 	}
 
 	.destination-card {
-		display: block;
-		flex: 1;
-	}
-
-	.destination-card picture {
-		display: block;
-		width: 100%;
-	}
-
-	.destination-card img {
-		width: 100%;
-	}
-
-	.destination-content {
-		padding: var(--spacing-md);
+		flex: 0 0 calc((100% - (2 * var(--spacing-md))) / 3);
 	}
 }
 
