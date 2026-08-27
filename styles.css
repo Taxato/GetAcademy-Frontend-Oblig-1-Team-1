@@ -324,43 +324,52 @@ header {
 /* #region TRAVEL */
 
 .travel-request {
-	display: flex;
+	display: block;
 	flex-direction: row;
 	align-items: center;
-	gap: 40px;
-	padding: 30px;
+	justify-content: space-between;
+	padding: 30px 10%;
 }
 
 .travel-request form {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	/* width: 300px; */
+	display: grid;
+	grid-template-columns: 150px 200px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.travel-request form h2 {
+	grid-column: 1 / -1;
 }
 
 .travel-illustration {
-	/* width: 300px; */
+	display: none;
 	height: 200px;
 	flex-shrink: 0;
 }
 
-.travel-request input,
+.travel-request input:not([type="checkbox"]),
 .travel-request select {
 	padding: 8px;
 }
 
+.travel-request label[for="newsletter"] {
+	grid-column: 1;
+}
+
 .travel-request button {
+	grid-column: 1;
 	padding: 10px;
 	cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) {
 	.travel-request {
-		display: block;
+		display: flex;
 	}
 
 	.travel-illustration {
-		display: none;
+		display: block;
 	}
 }
 
