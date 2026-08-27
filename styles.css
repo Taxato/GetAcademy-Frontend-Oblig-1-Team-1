@@ -169,10 +169,7 @@ header {
 	font-weight: 600;
 	width: fit-content;
 
-	background-image: linear-gradient(
-		currentColor,
-		currentColor
-	);
+	background-image: linear-gradient(currentColor, currentColor);
 
 	background-position: left bottom;
 	background-repeat: no-repeat;
@@ -277,7 +274,27 @@ header {
 /* #endregion */
 
 /* #region ABOUT */
-
+.about {
+	flex-wrap: wrap;
+	border-top: 1px solid #d8d4c8;
+	border-bottom: 1px solid #d8d4c8;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+.about-card {
+	flex: 1 1 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 32px 20px;
+	border-right: 1px solid #d8d4c8;
+}
+@media (max-width: 600px) {
+	.about {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 /* #endregion */
 
 /* #region TRAVEL */
@@ -408,11 +425,11 @@ footer a:hover {
 /* #endregion */
 
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
 }
