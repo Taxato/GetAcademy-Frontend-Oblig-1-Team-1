@@ -45,7 +45,7 @@ h2 {
 /* #region HEADER */
 
 header {
-	padding: 1rem;
+	padding: var(--spacing-md);
 	display: flex;
 	flex-direction: column;
 	border-bottom: 1px solid var(--color-primary);
@@ -80,7 +80,7 @@ header {
 		flex: 1;
 	}
 	.site-nav ul {
-		margin-top: 0.5rem;
+		margin-top: var(--spacing-sm);
 		flex-direction: row;
 		justify-content: flex-end;
 		gap: 2rem;
@@ -98,7 +98,7 @@ header {
 	text-align: center;
 	text-wrap: balance;
 	gap: 0.5rem;
-	padding: 1rem;
+	padding: var(--spacing-md);
 
 	animation: hero-fadein 500ms ease-out forwards;
 }
