@@ -103,6 +103,12 @@ header {
 	animation: hero-fadein 500ms ease-out forwards;
 }
 
+.hero-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-md);
+}
+
 .hero .cta {
 	color: var(--color-background);
 	background-color: var(--color-accent);
@@ -126,25 +132,9 @@ header {
 
 @media (min-width: 900px) {
 	.hero {
-		display: grid;
-
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr min-content 1fr 1fr;
-	}
-
-	.hero h1 {
-		grid-row-start: 2;
-	}
-	.hero p {
-		grid-row-start: 3;
-	}
-	.hero .cta {
-		grid-row-start: 4;
-	}
-
-	.hero svg {
-		grid-row: 1 / span 5;
-		grid-column: 2;
+		flex-direction: row;
+		justify-content: center;
+		gap: var(--spacing-lg);
 	}
 }
 
